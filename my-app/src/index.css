@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color:#272D35;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -15,13 +16,47 @@ code {
 .nav {
   display: flex;
   align-items: center;
+  background-color: #21222A;
+  justify-content: space-between;
+  
+}
+
+.nav > img {
+  padding-left: 20px;
+}
+.nav2{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
 }
 
 .nav-items {
   list-style: none;
   display: flex ;
+ 
 }
 
 .nav-items >li {
+  color: white;
+  font-size: 20px;
   padding: 10px;
+  overflow: hidden;
+  
 }
+
+
+.body>h1{
+  padding-top: 20px;
+  padding-left: 20px;
+  color: white;
+}
+
+.body > ul > li{
+  display: flex;
+  padding: 10px;
+  color: white;
+  
+
+}
+
+

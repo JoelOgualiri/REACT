@@ -1,7 +1,7 @@
 
 export default function MainContent() {
     return (
-        <div>
+        <div className="body">
             <h1>Fun facts about React</h1>
             <ul>
                 <li>Was first released in 2013</li>
