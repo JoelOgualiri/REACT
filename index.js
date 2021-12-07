@@ -13,7 +13,7 @@ ReactDOM.render(page, document.getElementById('root'))
 
 
 //creating a fun facts about React
-function reactStat() {
+function ReactStat() {
     return (
         <div>
             <img src="react-logo.png" style={{ width: 50 }}></img>
@@ -32,4 +32,4 @@ function reactStat() {
 }
 
 
-ReactDOM.render(reactStat(), document.getElementById('root'))
+ReactDOM.render(<ReactStat />, document.getElementById('root'))
