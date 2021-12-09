@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
 .Navbar {
   display: flex;
   height: 70px;
@@ -13,4 +18,40 @@
 
 .App-logo {
   max-width: 100px;
+}
+
+section {
+  padding-left: 40px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.hero--img {
+  margin-top: 5%;
+  align-self: center;
+  max-width: 400px;
+}
+
+.hero--header {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 110%;
+  color: #000000;
+}
+
+
+.hero--text {
+  margin-top: 0;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 110%;
+  /* or 18px */
+  color: #222222;
 }
