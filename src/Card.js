@@ -1,21 +1,30 @@
 import star from "./star.png"
-import backgroundPix from "./katie-zaferes.png"
-export default function Card() {
+//import backgroundPix from "./images/katie-zaferes.png"//
+export default function Card(props) {
+    console.log(props.image)
+
+
     return (
 
+
         <div className="card">
-            <img className="card--image" src={backgroundPix} alt="pix"></img>
+
+            <img className="card--image" src={props.image} width="50" alt="pix"></img>
             <div className="card--stats">
                 <img className="card--star" src={star} alt="star"></img>
-                <span className="gray">5.0</span>
-                <span className="gray">(6) * </span>
+                <span className="gray">{props.rating}</span>
+                <span className="gray">{props.review}</span>
                 <span className="gray">USA</span>
 
             </div>
-            <p>Learn wedding photography</p>
-            <p><span className="bold">From $136 </span> / person</p>
+            <p>{props.comment}</p>
+            <p><span className="bold">From ${props.price} </span> / person</p>
 
 
         </div>
+
+
+
+
     )
 }

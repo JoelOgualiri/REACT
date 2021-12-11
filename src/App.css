@@ -28,6 +28,13 @@ body {
   max-width: 100px;
 }
 
+.greeting {
+
+  float: right;
+  margin-right: 10px;
+  padding-left: 20px;
+}
+
 section {
   padding-left: 40px;
 }
@@ -65,9 +72,17 @@ section {
 }
 
 .card {
-  margin-top: 400px;
+
+
   width: 205px;
   font-size: 12px;
+}
+
+.card--list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
 }
 
 .card--image {
