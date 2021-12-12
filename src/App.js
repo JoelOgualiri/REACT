@@ -11,13 +11,8 @@ function App() {
   const Stuff = Activities.map(activity => {
     return <Card
       key={activity.id}
-      image={activity.coverImg}
-      rating={activity.stats.rating}
-      reviewCount={activity.stats.reviewCount}
-      comment={activity.title}
-      price={activity.price}
-      location={activity.location}
-      openSpots={activity.openSpots}
+      activity={activity}
+
     />
   })
   return (
