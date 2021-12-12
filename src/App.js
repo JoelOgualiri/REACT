@@ -11,8 +11,7 @@ function App() {
   const Stuff = Activities.map(activity => {
     return <Card
       key={activity.id}
-      activity={activity}
-
+      {...activity}
     />
   })
   return (
