@@ -11,7 +11,7 @@ export default function Greeting() {
         timeofDay = "night"
     }
     return (
-        <div className="greeting">
+        <div >
             <h1 >Good <span className="bold">{timeofDay}!</span></h1>
         </div>
 

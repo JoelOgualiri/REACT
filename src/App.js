@@ -10,18 +10,24 @@ import Activities from './Activities';
 function App() {
   const Stuff = Activities.map(activity => {
     return <Card
-      image={activity.image}
-      rating={activity.rating}
-      review={activity.review}
-      comment={activity.comment}
+      key={activity.id}
+      image={activity.coverImg}
+      rating={activity.stats.rating}
+      reviewCount={activity.stats.reviewCount}
+      comment={activity.title}
       price={activity.price}
+      location={activity.location}
+      openSpots={activity.openSpots}
     />
   })
   return (
     <div className="App">
 
       <Navbar />
-      <Greeting />
+      <div className="greeting">
+        <Greeting />
+      </div>
+
       <Hero />
       <section className="card--list">
         {Stuff}
